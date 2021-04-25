@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import Button from './components/Button.jsx';
+import Button from './Button.jsx';
 
 const Statistic = ({ text, value }) => (
   <tr>
