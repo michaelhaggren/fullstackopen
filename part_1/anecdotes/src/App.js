@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import RandomQuoteButton from './Button.jsx';
+import RandomQuoteButton from './components/Button.jsx';
 
 const anecdotes = [
   'If it hurts, do it more often',
@@ -24,13 +24,28 @@ const App = () => {
     setVotes(newVotes);
   };
 
+  const mostVotes = () => {
+    let startIndex = 0;
+    let maxIndex = 0;
+    votes.forEach((item, index) => {
+      if (item > startIndex) {
+        startIndex = item;
+        maxIndex = index;
+      }
+    });
+    return maxIndex;
+  };
+
   return (
     <div style={{ display: 'grid', placeItems: 'center' }}>
-      <Anecdote
-        title="Anecdote of the day"
-        anecdote={anecdotes[selected]}
-        numVotes={votes[selected]}
-      />
+      <div style={{ width: '400px' }}>
+        <Anecdote
+          title="Anecdote of the day"
+          anecdote={anecdotes[selected]}
+          text="Votes: "
+          numVotes={votes[selected]}
+        />
+      </div>
       <div
         style={{
           display: 'flex',
@@ -44,15 +59,25 @@ const App = () => {
           text="next quote"
         />
       </div>
+      <div style={{ width: '400px' }}>
+        <Anecdote
+          title="Anecdote with most votes"
+          anecdote={anecdotes[mostVotes()]}
+          text="Votes: "
+          numVotes={votes[mostVotes()]}
+        />
+      </div>
     </div>
   );
 };
 
-const Anecdote = ({ title, anecdote, numVotes }) => (
+const Anecdote = ({ title, anecdote, numVotes, text }) => (
   <div>
     <h1>{title}</h1>
     <div>{anecdote}</div>
-    <div>{numVotes}</div>
+    <div style={{ marginTop: 20 }}>
+      {text} {numVotes}
+    </div>
   </div>
 );
 
