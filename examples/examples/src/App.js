@@ -27,6 +27,7 @@ const App = () => {
   const [value, setvalue] = useState(10);
 
   const setToValue = (newValue) => {
+    console.log(newValue);
     setvalue(newValue);
   };
 

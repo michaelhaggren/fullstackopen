@@ -12,6 +12,8 @@ const SomeComponent = () => {
   const updateName = (event) => {
     event.preventDefault();
     setName(input);
+    console.log(name);
+
     setValue('');
   };
   return (
