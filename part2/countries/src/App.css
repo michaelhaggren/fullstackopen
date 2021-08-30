@@ -1,0 +1,6 @@
+.main-content {
+  display: grid;
+  place-items: center;
+  width: auto;
+  background: rgb(204, 203, 203);
+}
