@@ -1,0 +1,52 @@
+{
+  "notes": [
+    {
+      "id": 2,
+      "content": "En älg på vägen är en svensk stoppskylt.",
+      "date": "2021-08-29T08:06:49.146Z",
+      "important": false
+    },
+    {
+      "id": 1,
+      "content": "Hello bro asdasd",
+      "date": "2021-08-30T09:26:18.968Z",
+      "important": true
+    },
+    {
+      "id": 480830,
+      "content": "En älg på vägen är en svensk stoppskylt.",
+      "date": "2021-08-30T09:44:05.743Z",
+      "important": true
+    },
+    {
+      "id": 209016,
+      "content": "En älg på vägen är en svensk stoppskylt.",
+      "date": "2021-08-30T09:44:07.052Z",
+      "important": true
+    },
+    {
+      "id": 234747,
+      "content": "En älg på vägen är en svensk stoppskylt.",
+      "date": "2021-08-30T09:44:08.041Z",
+      "important": false
+    },
+    {
+      "id": 11108,
+      "content": "asdasd",
+      "date": "2021-08-30T09:48:53.637Z",
+      "important": true
+    },
+    {
+      "id": 2875,
+      "content": "asd",
+      "date": "2021-08-30T09:50:58.530Z",
+      "important": true
+    },
+    {
+      "id": 207129,
+      "content": "asd",
+      "date": "2021-08-30T09:54:35.760Z",
+      "important": true
+    }
+  ]
+}
